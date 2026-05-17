@@ -1,0 +1,24 @@
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+
+# Ignore environment files
+.env
+.env.production
+
+# Ignore virtual environments
+venv/
+.venv
+users/migrations
+courses/migrations
+enrollments/migrations
+events/migrations
+inquiries/migrations
+notifications/migrations
+
+
+dump.rdb
+temp-19144.rdb
+temp-18720.rdb
