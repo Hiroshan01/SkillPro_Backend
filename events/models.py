@@ -9,7 +9,6 @@ class Event(models.Model):
         ("jobfair", "Job Fair"),
         ("exam", "Exam"),
         ("workshop", "Workshop"),
-        # Add more as needed
     ]
     title = models.CharField(max_length=200)
     date = models.DateField()

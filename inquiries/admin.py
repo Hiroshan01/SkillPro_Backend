@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Inquiry
+
+
+@admin.register(Inquiry)
+class InquiryAdmin(admin.ModelAdmin):
+    list_display = ["id", "user", "name", "email", "subject", "created_at"]
+    search_fields = ["name", "email", "subject", "message", "user__username"]

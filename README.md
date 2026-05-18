@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # backend
 
 
@@ -91,3 +92,7 @@ For open source projects, say how it is licensed.
 
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+=======
+# SkillPro_Backend
+Welcome to SkillPro, a robust, full-featured web application designed to streamline the administration, instruction, and student experience for vocational and technical training institutes. From course enrollment to student portal management, SkillPro bridges the gap between aspiring learners and career-ready skills.
+>>>>>>> 8388c072df930f7b1deb5fefec3ab79a68a047d2

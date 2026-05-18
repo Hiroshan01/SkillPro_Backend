@@ -161,20 +161,7 @@ DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL", "noreply@yourdomain.com")
 # Add custom config if you use a third-party email service (see docs)
 
 
-# --- Celery ---
-CELERY_BROKER_URL = os.getenv("CELERY_BROKER_URL", "redis://localhost:6379/0")
-CELERY_RESULT_BACKEND = os.getenv(
-    "CELERY_RESULT_BACKEND", CELERY_BROKER_URL
-)  # usually same as broker
-CELERY_TIMEZONE = TIME_ZONE
 
-# Celery Beat (remove this if you don't use periodic background tasks)
-CELERY_BEAT_SCHEDULE = {
-    # "send-insight-report-every-morning": {
-    #     "task": "insight.tasks.send_daily_insight_report",
-    #     "schedule": crontab(hour=8, minute=0),
-    # },
-}
 
 
 # --- Primary Key Field ---

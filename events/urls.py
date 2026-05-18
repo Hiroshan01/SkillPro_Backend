@@ -1,4 +1,8 @@
-# users/urls.py example (do this in every app)
 from django.urls import path
 
-urlpatterns = []
+from .views import EventListCreateAPIView, EventRetrieveUpdateDestroyAPIView
+
+urlpatterns = [
+    path("", EventListCreateAPIView.as_view(), name="event-list-create"),
+    path("<int:pk>/", EventRetrieveUpdateDestroyAPIView.as_view(), name="event-rud"),
+]
