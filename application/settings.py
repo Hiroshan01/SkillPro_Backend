@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     "events",
     "inquiries",
     "notifications",
+    "certificate",
     # Django built-in
     "django.contrib.admin",
     "django.contrib.auth",
@@ -159,9 +160,6 @@ else:
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL", "noreply@yourdomain.com")
 # Add custom config if you use a third-party email service (see docs)
-
-
-
 
 
 # --- Primary Key Field ---
